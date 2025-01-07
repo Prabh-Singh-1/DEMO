@@ -12,7 +12,7 @@ export default function Home() {
   // let blogpost = await JSON.parse(await data.text());
   useEffect(() => {
     async function fetchData() {
-      let data = await fetch('http://localhost:3000/api/blogpost/blog')
+      let data = await fetch('https://techi-talks.vercel.app/api/blogpost/blog')
       let posts = await JSON.parse(await data.text());
       setBlogpost(posts);
     }
