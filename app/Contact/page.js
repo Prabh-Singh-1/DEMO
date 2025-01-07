@@ -13,7 +13,7 @@ const Contact = () => {
     e.preventDefault();
     let formData = { name, email, message };
 
-    let response = await fetch('http://localhost:3000/api/contact', {
+    let response = await fetch('https://techi-talks.vercel.app/api/contact', {
       method: "POST",
       body: JSON.stringify(formData)
     })
