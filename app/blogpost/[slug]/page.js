@@ -36,7 +36,7 @@ export default async function page ({params}) {
     // }, [params.slug]);
     return (
         <>
-            <div className='min-h-screen my-5 text-white'>
+            <div className='min-h-screen py-5 text-white'>
                 {blogpost.image === 0 && <div className="absolute left-[48%] top-[50%]"><Loader /></div>}
                 <div className='flex flex-col justify-center items-center gap-5 relative border-2 border-white py-20 px-12 container mx-auto w-[80%] bg-gradient-to-r from-gray-800 to-gray-900'>
                     <div className='flex flex-col justify-center items-center gap-7'>

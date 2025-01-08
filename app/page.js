@@ -21,14 +21,14 @@ export default function Home() {
  
   return (
     <>
-      <div className="bg-black text-white min-h-screen ">
-        <section className="relative h-[500px] md:h-[700px] mt-4 md:m-10 ">
+      <div className="bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px] text-white min-h-screen ">
+        <section className="relative h-[500px] md:h-[700px] pt-4 md:p-10 ">
           <Image
             src="/images/next-image.png"
             alt="next js logo image"
             layout="fill"
             objectFit="cover"
-            className="opacity-40"
+            className="opacity-30"
           />
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-5">
             <h1 className="text-4xl md:text-6xl font-bold">Discover Amazing Techie Blogs</h1>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 const About = () => {
     return (
         <div className="text-white min-h-screen flex items-center justify-center p-8">
-            <div className="bg-gray-800 rounded-lg shadow-lg w-[90%] p-8">
+            <div className="bg-slate-900 rounded-lg shadow-lg w-[90%] p-8">
                 <div className="flex flex-col items-center text-center">
                     <img
                         src="./images/my-pic.png"
