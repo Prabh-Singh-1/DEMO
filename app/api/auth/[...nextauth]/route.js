@@ -9,7 +9,6 @@ export const authoptions = NextAuth({
       clientSecret: process.env.GITHUB_SECRET
     })
   ],
-  callbackUrl: `${process.env.NEXTAUTH_URL}/api/auth/callback/github`,
 })
 
 export { authoptions as GET, authoptions as POST }
