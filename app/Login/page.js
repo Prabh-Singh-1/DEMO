@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { useSession, signIn, signOut } from "next-auth/next"
+import { useSession, signIn, signOut } from "next-auth/react"
 import { redirect } from 'next/navigation'
 
 const Login = () => {
