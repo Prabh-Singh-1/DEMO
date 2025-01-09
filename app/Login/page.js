@@ -1,10 +1,10 @@
 "use client"
 import React from 'react'
-import { getServerSession, signIn, signOut } from "next-auth/next"
+import { useSession, signIn, signOut } from "next-auth/next"
 import { redirect } from 'next/navigation'
 
 const Login = () => {
-  const { data: session } = getServerSession()  
+  const { data: session } = useSession()  
   if(session){
     redirect("/")
   }
