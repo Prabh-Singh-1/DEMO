@@ -11,7 +11,7 @@ export default async function page ({params}) {
     const { slug } = await params;
 
     // const params = useParams();
-    const response = await fetch(`http://techi-talks.vercel.app/api/blogpost/getBlog?slug=${slug}`, {next: {revalidate: 1}});
+    const response = await fetch(`https://techi-talks.vercel.app/api/blogpost/getBlog?slug=${slug}`, {next: {revalidate: 1}});
     const blogpost = await response.json();
     
     // const [blogpost, setBlogpost] = useState([]);
