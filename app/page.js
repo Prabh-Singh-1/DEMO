@@ -12,7 +12,7 @@ export default function Home() {
   // let blogpost = await JSON.parse(await data.text());
   useEffect(() => {
     async function fetchData() {
-      let data = await fetch('https://techi-talks.vercel.app/api/blogpost/blog')
+      let data = await fetch('ttp://techi-talks.vercel.app/api/blogpost/blog')
       let posts = await JSON.parse(await data.text());
       setBlogpost(posts);
     }
@@ -42,7 +42,7 @@ export default function Home() {
         </section>
 
 
-        <section className="pt-10 px-5 mx-5">
+        <section className="pt-10 md:px-5 px-2 mx-2 md:mx-5">
           <h2 className="text-3xl font-bold text-center mb-8">Featured Articles</h2>
 
           <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-8">

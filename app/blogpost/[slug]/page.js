@@ -11,7 +11,7 @@ export default async function page ({params}) {
     const { slug } = await params;
 
     // const params = useParams();
-    const response = await fetch(`https://techi-talks.vercel.app/api/blogpost/getBlog?slug=${slug}`, {next: {revalidate: 1}});
+    const response = await fetch(`http://techi-talks.vercel.app/api/blogpost/getBlog?slug=${slug}`, {next: {revalidate: 1}});
     const blogpost = await response.json();
     
     // const [blogpost, setBlogpost] = useState([]);
@@ -36,9 +36,9 @@ export default async function page ({params}) {
     // }, [params.slug]);
     return (
         <>
-            <div className='min-h-screen py-5 text-white'>
+            <div className='min-h-screen py-5 text-white '>
                 {blogpost.image === 0 && <div className="absolute left-[48%] top-[50%]"><Loader /></div>}
-                <div className='flex flex-col justify-center items-center gap-5 relative border-2 border-white py-20 px-12 container mx-auto w-[80%] bg-gradient-to-r from-gray-800 to-gray-900'>
+                <div className='flex flex-col justify-center items-center gap-5 relative border-2 border-white md:py-20 pt-20 pb-1 px-2 md:px-12 container mx-auto w-[95%] md:w-[80%] bg-gradient-to-r from-gray-800 to-gray-900 '>
                     <div className='flex flex-col justify-center items-center gap-7'>
                         <span className='text-base absolute left-20 top-12 font-medium'>Jan 3, 2025 . 2 min read</span>
                         <h1 className='text-4xl font-bold tracking-wide'>{blogpost.title}</h1>
